@@ -14,9 +14,9 @@ app.use(cors());
 
 // con.connect(checkConnectDB);
 
-app.get('/home',  (res,req)=>{
+app.get('/home',  (req,res)=>{
 
-    res.send(" the connection done ");
+    res.send(" the connection done ")
 })
 app.post('/register/student' , studentRegister)
 app.post('/login/student' , studentLogin)
